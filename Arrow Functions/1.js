@@ -17,7 +17,7 @@ console.log(numbers(50))
 const sortform = (nums) => nums
 console.log(sortform(10))
 
-let group = {
+let group1 = {
     title: 'Science',
     students: ['Pete','Jone','Alice'],
     showList: function() {
@@ -26,4 +26,13 @@ let group = {
         })
     } 
 }
-group.showList()
+group1.showList()
+
+let group2 = {
+    title: 'Science',
+    students: ['Pete','Jone','Alice'],
+    showList: function() {
+        this.students.forEach( (el) =>console.log(`${el} ${this.title} Student `))
+    } 
+}
+group2.showList()
