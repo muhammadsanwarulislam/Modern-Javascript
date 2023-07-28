@@ -1,4 +1,4 @@
-var age = 7;
+var age = 7
 //Normal if else condition
 if(age >= 18) {
     console.log('Adult')
@@ -6,8 +6,8 @@ if(age >= 18) {
     console.log('Child')
 }
 //Ternary Operation
-var type = age >= 18 ? 'Adult' : 'Child';
+var type = age >= 18 ? 'Adult' : 'Child'
 //Nested Ternary Operator
-var age = 10;
-var type = age >= 18 ? 'Adult' : age < 9 ? 'Child': 'Young';
+var age = 10
+var type = age >= 18 ? 'Adult' : age < 9 ? 'Child': 'Young'
 console.log(type)
