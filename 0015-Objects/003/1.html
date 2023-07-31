@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactivity:vu2</title>
+</head>
+<body>
+    <p>Reactivity: vu2</p>
+    <h1 id='h1'>???</h1>
+
+    <script>
+        let info = {
+            msg: 'send me to the H1 tag'
+        }
+        document.getElementById('h1').innerText = info.msg
+        Object.defineProperties(info,'reactive_ms',{
+            get() {
+                return info.msg
+            },
+            set(newVal) {
+                document.getElementById('h1') = newVal
+                info.msg = newVal
+            }
+        })
+    </script>
+</body>
+</html>
